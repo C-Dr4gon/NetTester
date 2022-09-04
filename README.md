@@ -3,7 +3,7 @@
 
 > Execute SOChecker.sh with bash
 
-$ bash SOChecker.sh
+> $ bash SOChecker.sh
 
 > It will automatically install relevant applications and arrive at menu
 
