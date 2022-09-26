@@ -1,10 +1,8 @@
 # socproject
->This is a multi-module bash program that executes and logs local network attacks for testing in a Security Operations environment.
+> This is a multi-module bash program that executes and logs local network attacks for testing in a Security Operations environment. This is only suitable for testing local networks, and logging results.
 
-> Execute SOChecker.sh with bash
+> 1. Execute SOChecker.sh with bash
 
-> $ bash SOChecker.sh
+    $ bash SOChecker.sh
 
-> It will automatically install relevant applications and arrive at menu.
-
-> This is only suitable for testing local networks, and logging results.
+>  2. It will automatically install relevant applications and arrive at menu, where you can select your options.
