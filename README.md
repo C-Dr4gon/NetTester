@@ -1,5 +1,5 @@
 # socproject
->This is a multi-module bash program for Security Operations testing. It executes and logs local network attacks.
+>This is a multi-module bash program that executes and logs local network attacks for testing in a Security Operations environment.
 
 > Execute SOChecker.sh with bash
 
