@@ -5,6 +5,6 @@
 
 > $ bash SOChecker.sh
 
-> It will automatically install relevant applications and arrive at menu
+> It will automatically install relevant applications and arrive at menu.
 
-> This is only suitable for testing local networks, and logging results
+> This is only suitable for testing local networks, and logging results.
