@@ -1,8 +1,10 @@
 #!/bin/bash
 
-### OBJECTIVES: SOCHECKER
+########################
+### SOCHECKER FUNCTIONS
+########################
 
-# automatically install relevant applications
+# INSTALL(): automatically installs relevant applications and creates relevant directories
 # arrive at menu with options for 2 scans and 2 brute-force attacks
 # use options to execute scans or brute-force attacks
 # return to menu after a scan or network attack is conducted
@@ -17,15 +19,22 @@ echo "SOCHECKER is starting..."
 echo " "
 
 
-# define install function
-function install()
+### DEFINITION
+function INSTALL()
 {
-	# let the user know applications are being installed 
+	### START
+	# let the user know that SOChecker is starting
 	echo " "
-	echo "Installing applications on your local computer..."
+	echo "[*] SOCHECKER is starting..."
+	echo " "
+	echo "[*] Installing and updating applications on your local computer..."
+	echo " "
+	echo "[*] 
+	echo "[*] Creating new directory: ~/SOChecker..."
 	echo " "
 	
-	# update and install latest APT packages
+	### APT UPDATE
+	# update APT packages
 	sudo apt-get update
 	sudo apt-get upgrade
 	sudo apt-get dist-upgrade
@@ -58,8 +67,9 @@ function install()
 	echo "	"
 }
 
-# call the install function
-install
+### EXECUTION
+# call the INSTALL function
+INSTALL
 
 ### NETWORK LOGGING FUNCTION
 
