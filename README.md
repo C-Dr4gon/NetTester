@@ -3,7 +3,7 @@
 
 > 1. Execute NetTeser.sh with bash
 
-    $ bash NetTeser.sh
+    $ bash NetTester.sh
 
 >  2. It will automatically install relevant applications and arrive at menu.
 
