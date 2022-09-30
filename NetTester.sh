@@ -46,17 +46,18 @@ function INSTALL()
 	touch log.log
         echo "[+] Log created: ~/NetTester/log.log"
         
-        # WORDLIST CONFIGURATION
+	# WORDLIST CONFIGURATION
 	echo "[*] Configuring Wordlists..."
-	cd ~/usr/share/wordlists
-	sudo gunzip rockyou.txt
-	sudo cat rockyou.txt > wordlist.txt
-	sudo sed -i '1i root' wordlist.txt
-	sudo mv wordlist.txt ~/NetTest
-	cd ~/NetTest
-	WordList=~/NetTest/wordlist.txt
-	echo "[+] Wordlist created: ~/NetTest/wordlist.txt"
+	sudo apt-get -y install wordlists
+	cd /usr/share/wordlists
+	sudo gunzip rockyou.txt.gz
+	sudo cp rockyou.txt ~/NetTester/wordlist.txt
+	cd ~/NetTester
+	sudo sed -i '1i kali' wordlist.txt
+	WordList=~/NetTester/wordlist.txt
+	echo "[+] Wordlist created: ~/NetTester/wordlist.txt"
 	echo " "
+	cd ~/NetTester
 	
   	### FIGLET INSTALLATION
 	# install figlet for aesthetic purposes
@@ -71,8 +72,7 @@ function INSTALL()
 	# install relevant applications
         sudo apt-get -y install nmap
 	sudo apt-get -y install masscan
-	sudo apt-get -y install wordlists
-        sudo apt-get -y install hydra
+	sudo apt-get -y install hydra
         
 	### END
 	# let the user know applications are installed
@@ -347,7 +347,7 @@ while true
 
 do
 # display figlet for aesthetics
-figlet -c -f ~/SOChecker/figrc/cybermedium.flf -t "NETTESTER"
+figlet -c -f ~/NetTester/figrc/cybermedium.flf -t "NETTESTER"
 echo " "
 # call CONSOLE function
 CONSOLE
