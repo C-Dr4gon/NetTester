@@ -54,7 +54,7 @@ function INSTALL()
 	sudo sed -i '1i root' wordlist.txt
 	sudo mv wordlist.txt ~/NetTest
 	cd ~/NetTest
-	WordList = ~/NetTest/wordlist.txt
+	WordList=~/NetTest/wordlist.txt
 	echo "[+] Wordlist created: ~/NetTest/wordlist.txt"
 	echo " "
 	
