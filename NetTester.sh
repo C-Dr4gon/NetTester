@@ -349,6 +349,8 @@ do
 # display figlet for aesthetics
 figlet -c -f ~/NetTester/figrc/cybermedium.flf -t "NETTESTER"
 echo " "
+echo "[*] This program is for testing the basic network security of a host within a local network. Please use for penetration testing and education purposes only."
+echo " "
 # call CONSOLE function
 CONSOLE
 
