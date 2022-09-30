@@ -5,7 +5,7 @@
 ########################
 
 # INSTALL(): automatically installs relevant applications and creates relevant directories
-# CONSOLE(): collects user input to choose and execution option for network testing
+# CONSOLE(): collects user input to choose and execute option for network testing
 # NMAP(): uses nmap to scan for open ports of a target address and execute LOG() 
 # MASSCAN(): uses mascan to scan for open ports of a target address and execute LOG()
 # MSF(): uses MSF console to brute-force via SMB on a target address and execute LOG()
