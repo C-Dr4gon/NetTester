@@ -5,6 +5,6 @@
 
     $ bash SOChecker.sh
 
->  2. It will automatically install relevant applications and arrive at menu
+>  2. It will automatically install relevant applications and arrive at menu.
 
 >  3. Select your test.
