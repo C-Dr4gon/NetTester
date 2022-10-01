@@ -1,5 +1,5 @@
 # NetTester
-> This is a penetration testing program, written in bash script for Linux, that executes and logs local network attacks. This is only suitable for testing local networks, and logging results.
+> This is a penetration testing program, written in bash script for Linux, that executes and logs local network attacks. This is meant for testing local networks with SMB protocol service enabled.
 
 > CONFIG: The brute-force attack will take a long time. If you just want to test if this program works, set your user and password as "kali".
 
