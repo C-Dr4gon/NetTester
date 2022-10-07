@@ -308,7 +308,7 @@ function HYDRA()
         # let user know about the number and details of cracked users
         echo " "
         echo "$(cat hydraoutput.txt | grep host: | wc -l) [+] CRACKED USERS: (Format: <username> <password>)"
-        echo "$(cat hydraoutput.txt | grep host: | awk '{print $5 $7}')"
+        echo "$(cat hydraoutput.txt | grep host: | awk '{print $5, $7}')"
         echo " "
         
         ### END
