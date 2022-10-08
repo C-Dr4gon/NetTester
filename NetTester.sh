@@ -350,7 +350,7 @@ function CONSOLE()
 	### CONSOLE DISPLAY
 	# display figlet for aesthetics, with short description of program
 	echo " "
-	figlet -c -f ~/VulnerMapper/figrc/cybermedium.flf -t "VULNERMAPPER"
+	figlet -c -f ~/VulnerMapper/figrc/cybermedium.flf -t "NETTESTER"
 	# description of functions
 	echo " "
 	echo "[*] IMPORTANT NOTICE:"
