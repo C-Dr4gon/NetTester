@@ -98,7 +98,7 @@ function LOG()
 		DateTime="$(date +%F)_$(date +%X | awk '{print $1}')"
 		AttackType="NmapPortScan"
 		Arg="[sudo nmap -Pn $IP]"
-		NumOpenPorts="$(cat nmapoutput.txt | grep open | grep- v filtered | wc -l)"
+		NumOpenPorts="$(cat nmapoutput.txt | grep open | grep -v filtered | wc -l)"
 		# append filtered data into log.log
 		echo "$DateTime $IP $AttackType $Arg [$NumOpenPorts Open Ports"] >> log.log
 	fi
@@ -112,7 +112,7 @@ function LOG()
 		DateTime="$(date +%F)_$(date +%X | awk '{print $1}')"
 		AttackType="MasscanPortScan"
 		Arg="[sudo masscan $IP -p'$Ports']"
-		NumOpenPorts="$(cat masscanoutput.txt | grep open | grep- v filtered | wc -l)"
+		NumOpenPorts="$(cat masscanoutput.txt | grep open | grep -v filtered | wc -l)"
 		# append filtered data into log.log
 		echo "$DateTime $IP $AttackType $Arg [$NumOpenPorts Open Ports"] >> log.log
 	fi
@@ -165,7 +165,7 @@ function NMAP_SCAN()
         
         ## SCANNING
         # execute scan with -Pn flag to avoid firewall 
-        s sudo nmap -Pn -T4 -p0-65535 "$IP" > nmapoutput.txt
+        sudo nmap -Pn -T4 -p0-65535 "$IP" > nmapoutput.txt
         
         ### LOGGING
         # call the LOG function to append elements of nmapoutput.txt into log.log
@@ -173,7 +173,7 @@ function NMAP_SCAN()
         # let user know about the number and details of open ports 
         echo " "
         echo "$(cat nmapoutput.txt | grep open | grep -v filtered | wc -l) [+] OPEN PORTS:"
-        echo "$(cat nmapoutput.txt | grep open | grep- v filtered |awk '{print $1}')"
+        echo "$(cat nmapoutput.txt | grep open | grep -v filtered |awk '{print $1}')"
         echo " "
         
         ### END
