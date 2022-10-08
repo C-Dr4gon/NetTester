@@ -358,7 +358,7 @@ function CONSOLE()
 	echo " "
 	
 	# read options for remote control
-	read -p "[!] Select an option (A/B/C/D/E):
+	read -p "[!] TEST SELECTION (A/B/C/D/E):
 	
 	A) Nmap Port Scan
 	B) Masscan Port Scan
