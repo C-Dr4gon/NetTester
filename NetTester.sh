@@ -53,7 +53,8 @@ function INSTALL()
 	sudo gunzip rockyou.txt.gz
 	sudo cp rockyou.txt ~/NetTester/wordlist.txt
 	cd ~/NetTester
-	sudo sed -i '1i kali' wordlist.txt
+	sudo sed -i '1i IEUser!' wordlist.txt
+	sudo sed -i '1i Passw0rd!' wordlist.txt
 	WordList=~/NetTester/wordlist.txt
 	echo "[+] Wordlist created: ~/NetTester/wordlist.txt"
 	echo " "
