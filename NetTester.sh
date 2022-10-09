@@ -295,7 +295,7 @@ function HYDRA_SMBBRUTE()
         
         ### BRUTE FORCE ATTACK
         WordList=~/NetTester/wordlist.txt
-        sudo hydra -f -L $WordList -P WordList $IP smb -t 4 -vV > hydraoutput.txt
+        sudo hydra -f -L $WordList -P $WordList $IP smb -t 4 -vV > hydraoutput.txt
         
         ### LOGGING
         # call the LOG function to append elements of hydraoutput.txt into log.log
