@@ -1,6 +1,6 @@
 # NetTester
 
-![image](https://user-images.githubusercontent.com/103941010/194732384-ad9d2c38-50c2-4c6f-b31e-3b58eabf1608.png)
+![image](https://user-images.githubusercontent.com/103941010/194732404-9ffbab20-3cd3-458f-9802-ae5bc4347c61.png)
 
 FUNCTION
 
