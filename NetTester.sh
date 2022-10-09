@@ -268,7 +268,7 @@ function MSF_SMBBRUTE()
         # remove the msfscript.rc and msfoutput.txt files after use
         sudo chmod 777 msfscript.rc
         sudo rm msfscript.rc
-        rm msfoutput.txt
+        rm -f msfoutput.txt
         # let user know that the attack is done
         echo " "
         echo "[+] MSF SMB Brute-Force Attack has been executed and logged at ~/NetTester/log.log."
