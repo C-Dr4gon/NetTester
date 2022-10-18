@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/103941010/194732404-9ffbab20-3cd3-458f-9802-ae5bc4347c61.png)
 
-This is a penetration testing program, written in bash script for Linux, that executes and logs local network attacks. This is meant for testing local networks with SMB protocol service enabled.
+This is a penetration testing program, written in shell script, that executes and logs local network attacks. This is meant for testing local networks with SMB protocol service enabled.
 
 The brute-force attack will take a long time. If you just want to test if this program works, set your user as "IEUser" and password as "Passw0rd!" for the hosts in the local target network.
 
